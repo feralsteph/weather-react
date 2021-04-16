@@ -1,5 +1,3 @@
-import logo from "./logo.svg";
-import axios from "axios";
 import Loader from "react-loader-spinner";
 import Search from "./Search";
 import "./App.css";
