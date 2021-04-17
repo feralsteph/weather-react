@@ -1,0 +1,23 @@
+.Search {
+  background-color: #ff8882;
+  padding: 20px 0 80px;
+  border-radius: 0 0 25px 25px;
+}
+
+button {
+  border: none;
+  margin: 5px;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: #5eaaa8;
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}

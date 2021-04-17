@@ -1,18 +1,15 @@
-import Loader from "react-loader-spinner";
+import Weather from "./Weather";
 import Search from "./Search";
+import Forecast from "./Forecast";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Loader
-          type="Puff"
-          color="white"
-          height={100}
-          width={100}
-        />
+        <Weather />
         <Search />
+        <Forecast />
       </header>
     </div>
   );
