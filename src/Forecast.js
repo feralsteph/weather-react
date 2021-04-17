@@ -13,7 +13,10 @@ export default function Forecast() {
                 <p class="card-text">
                   Clear
                 </p>
-                <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"></img>
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+                  alt="weather icon"
+                ></img>
                 <p class="card-text">
                   69°/54°
                 </p>
@@ -29,7 +32,10 @@ export default function Forecast() {
                 <p class="card-text">
                   Clear
                 </p>
-                <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"></img>
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+                  alt="weather icon"
+                ></img>
                 <p class="card-text">
                   69°/54°
                 </p>
@@ -45,7 +51,10 @@ export default function Forecast() {
                 <p class="card-text">
                   Clear
                 </p>
-                <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"></img>
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+                  alt="weather icon"
+                ></img>
                 <p class="card-text">
                   69°/54°
                 </p>
@@ -61,7 +70,10 @@ export default function Forecast() {
                 <p class="card-text">
                   Clear
                 </p>
-                <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"></img>
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+                  alt="weather icon"
+                ></img>
                 <p class="card-text">
                   69°/54°
                 </p>
@@ -77,7 +89,10 @@ export default function Forecast() {
                 <p class="card-text">
                   Clear
                 </p>
-                <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"></img>
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+                  alt="weather icon"
+                ></img>
                 <p class="card-text">
                   69°/54°
                 </p>
