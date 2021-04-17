@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Search.css";
-import axios from "axios";
 
-export default function Search(props) {
+export default function Search() {
   return (
     <div className="Search">
       <form>
