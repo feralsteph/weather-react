@@ -1,5 +1,5 @@
 .Search {
-  background-color: #ff8882;
+  background-color: #ffc2b4;
   padding: 20px 0 80px;
   border-radius: 0 0 25px 25px;
 }
@@ -13,7 +13,7 @@ button {
 }
 
 button:hover {
-  background-color: #5eaaa8;
+  background-color: #9dbeb9;
 }
 
 input {

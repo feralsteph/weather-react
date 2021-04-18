@@ -8,7 +8,7 @@ export default function Forecast() {
             <div class="card">
               <div class="card-body">
                 <h6 class="card-title">
-                  Monday
+                  Mon
                 </h6>
                 <p class="card-text">
                   Clear
@@ -27,7 +27,7 @@ export default function Forecast() {
             <div class="card">
               <div class="card-body">
                 <h6 class="card-title">
-                  Tuesday
+                  Tues
                 </h6>
                 <p class="card-text">
                   Clear
@@ -46,7 +46,7 @@ export default function Forecast() {
             <div class="card">
               <div class="card-body">
                 <h6 class="card-title">
-                  Wednesday
+                  Wed
                 </h6>
                 <p class="card-text">
                   Clear
@@ -65,7 +65,7 @@ export default function Forecast() {
             <div class="card">
               <div class="card-body">
                 <h6 class="card-title">
-                  Thursday
+                  Thurs
                 </h6>
                 <p class="card-text">
                   Clear
@@ -84,7 +84,7 @@ export default function Forecast() {
             <div class="card">
               <div class="card-body">
                 <h6 class="card-title">
-                  Friday
+                  Fri
                 </h6>
                 <p class="card-text">
                   Clear
