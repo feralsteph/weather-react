@@ -107,6 +107,7 @@ export default function Forecast() {
         <a
           href="https://github.com/feralsteph/weather-react"
           target="_blank"
+          rel="noreferrer"
         >
           Open-source code
         </a>{" "}
