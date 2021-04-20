@@ -1,9 +1,14 @@
 .Forecast {
   padding: 50px;
+  font-family: "Open Sans", sans-serif;
 }
-.card {
+.Forecast .card {
   width: 110px;
   padding: 5px;
   margin: 2px;
   border: none !important;
+}
+
+.Forecast footer {
+  font-family: monospace;
 }
