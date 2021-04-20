@@ -4,7 +4,7 @@ export default function Forecast() {
     <div className="Forecast">
       <div class="container">
         <div class="row">
-          <div class="col-sm">
+          <div class="col">
             <div class="card">
               <div class="card-body">
                 <h6 class="card-title">
@@ -23,7 +23,7 @@ export default function Forecast() {
               </div>
             </div>
           </div>
-          <div class="col-sm">
+          <div class="col">
             <div class="card">
               <div class="card-body">
                 <h6 class="card-title">
@@ -42,7 +42,7 @@ export default function Forecast() {
               </div>
             </div>
           </div>
-          <div class="col-sm">
+          <div class="col">
             <div class="card">
               <div class="card-body">
                 <h6 class="card-title">
@@ -61,7 +61,7 @@ export default function Forecast() {
               </div>
             </div>
           </div>
-          <div class="col-sm">
+          <div class="col">
             <div class="card">
               <div class="card-body">
                 <h6 class="card-title">
@@ -80,7 +80,7 @@ export default function Forecast() {
               </div>
             </div>
           </div>
-          <div class="col-sm">
+          <div class="col">
             <div class="card">
               <div class="card-body">
                 <h6 class="card-title">
