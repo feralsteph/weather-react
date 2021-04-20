@@ -6,10 +6,10 @@
 
 button {
   border: none;
-  margin: 5px;
+  margin: 5px !important;
   background-color: white;
-  border-radius: 5px;
-  font-size: 15px;
+  border-radius: 5px !important;
+  font-size: 15px !important;
 }
 
 button:hover {
