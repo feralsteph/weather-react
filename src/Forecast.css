@@ -5,5 +5,5 @@
   width: 110px;
   padding: 5px;
   margin: 2px;
-  border: none;
+  border: none !important;
 }

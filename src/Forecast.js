@@ -101,6 +101,17 @@ export default function Forecast() {
           </div>
         </div>
       </div>
+      <br />
+      <br />
+      <footer>
+        <a
+          href="https://github.com/feralsteph/weather-react"
+          target="_blank"
+        >
+          Open-source code
+        </a>{" "}
+        by Stephanie LaRue
+      </footer>
     </div>
   );
 }
