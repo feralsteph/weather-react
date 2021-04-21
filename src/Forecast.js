@@ -100,7 +100,7 @@ export default function Forecast() {
             </div>
           </div>
         </div>
-      </div>
+      </div>{" "}
       <br />
       <br />
       <footer>

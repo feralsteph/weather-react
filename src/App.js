@@ -1,4 +1,5 @@
 import Weather from "./Weather";
+import FormattedDate from "./FormattedDate";
 import Search from "./Search";
 import Forecast from "./Forecast";
 import "./Forecast.css";
@@ -15,6 +16,7 @@ function App() {
       <div className="container">
         <header className="App-header">
           <Weather />
+
           <Search />
           <Forecast />
         </header>
