@@ -59,9 +59,11 @@ export default function Weather(props) {
             autoFocus="on"
             onChange={handleCityChange}
           />
-          <button type="button">
-            🔍
-          </button>
+          <input
+            type="submit"
+            value="🔍"
+            className="button"
+          />
         </form>
       </div>
     );
