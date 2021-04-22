@@ -22,11 +22,11 @@ export default function FormattedDate(
   }
 
   if (minutes < 10) {
-    minutes = `0{minutes}`;
-    return (
-      <div>
-        {day} {hours}:{minutes}
-      </div>
-    );
+    minutes = `0${minutes}`;
   }
+  return (
+    <div>
+      {day} {hours}:{minutes}
+    </div>
+  );
 }

@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
-import FormattedDate from "./FormattedDate";
+import WeatherInfo from "./WeatherInfo";
 
 export default function Weather(props) {
   const [
     weatherData,
     setWeatherData,
   ] = useState({ ready: false });
+  const [city, setCity] = useState(
+    props.defaultCity
+  );
   function handleResponse(response) {
-    console.log(response.data);
     setWeatherData({
       ready: true,
       temperature:
@@ -26,38 +28,44 @@ export default function Weather(props) {
       city: response.data.name,
     });
   }
-  if (weatherData.ready) {
-    return (
-      <div className="Weather">
-        <h3>{weatherData.city}</h3>
-        <h4>
-          <FormattedDate
-            date={weatherData.date}
-          />
-        </h4>
-        <h4>
-          {weatherData.description}
-        </h4>
-        <span className="temperature">
-          {Math.round(
-            weatherData.temperature
-          )}
-        </span>
-        <span className="unit">°F</span>
-        <br />
-        <img
-          src={weatherData.iconUrl}
-          alt={weatherData.description}
-        ></img>
-      </div>
-    );
-  } else {
+  function search() {
     const apiKey =
       "b58c9c779b141dfd6610a16049288662";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Houston&appid=${apiKey}&units=metric`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios
       .get(apiUrl)
       .then(handleResponse);
+  }
+  function handleSubmit(event) {
+    event.preventDefault();
+    search(city);
+  }
+  function handleCityChange(event) {
+    setCity(event.target.value);
+  }
+
+  if (weatherData.ready) {
+    return (
+      <div className="Weather">
+        <WeatherInfo
+          data={weatherData}
+        />
+        <br />
+        <form onSubmit={handleSubmit}>
+          <input
+            type="search"
+            placeholder="Type a city..."
+            autoFocus="on"
+            onChange={handleCityChange}
+          />
+          <button type="button">
+            🔍
+          </button>
+        </form>
+      </div>
+    );
+  } else {
+    search();
     return "Loading...";
   }
 }

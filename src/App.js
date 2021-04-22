@@ -1,6 +1,4 @@
 import Weather from "./Weather";
-import FormattedDate from "./FormattedDate";
-import Search from "./Search";
 import Forecast from "./Forecast";
 import "./Forecast.css";
 import "bootstrap/dist/css/bootstrap.css";
@@ -15,9 +13,8 @@ function App() {
     <div className="App">
       <div className="container">
         <header className="App-header">
-          <Weather />
+          <Weather defaultCity="Houston" />
 
-          <Search />
           <Forecast />
         </header>
       </div>
