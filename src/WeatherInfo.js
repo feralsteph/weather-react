@@ -22,7 +22,7 @@ export default function WeatherInfo(
       <span className="unit">°F</span>
       <br />
       <WeatherIcon
-        code={props.data.icon}
+        code={props.data.iconUrl}
       />
     </div>
   );
