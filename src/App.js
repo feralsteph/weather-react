@@ -1,6 +1,5 @@
 import Weather from "./Weather";
-import Forecast from "./Forecast";
-import "./Forecast.css";
+
 import "bootstrap/dist/css/bootstrap.css";
 // Put any other imports below so that CSS from your
 // components takes precedence over default styles.
@@ -14,10 +13,18 @@ function App() {
       <div className="container">
         <header className="App-header">
           <Weather defaultCity="Houston" />
-
-          <Forecast />
         </header>
       </div>
+      <footer>
+        <a
+          href="https://github.com/feralsteph/weather-react"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Open-source code
+        </a>{" "}
+        by Stephanie LaRue
+      </footer>
     </div>
   );
 }

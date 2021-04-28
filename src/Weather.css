@@ -1,7 +1,7 @@
 .Weather {
   background-color: #ffc2b4;
   color: white;
-  padding: 50px;
+  padding: 25px;
   border-radius: 25px;
   margin-top: 20px;
 }
@@ -22,6 +22,10 @@
 }
 .button:hover {
   background-color: #d9d9d9;
+}
+
+.Weather form {
+  padding-bottom: 40px;
 }
 
 input {

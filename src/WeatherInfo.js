@@ -22,6 +22,7 @@ export default function WeatherInfo(
       <br />
       <WeatherIcon
         code={props.data.iconUrl}
+        size={86}
       />
     </div>
   );

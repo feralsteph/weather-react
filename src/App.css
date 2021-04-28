@@ -9,3 +9,8 @@
   justify-content: center;
   color: black;
 }
+
+.App footer {
+  font-family: monospace;
+  margin-top: 25px;
+}
