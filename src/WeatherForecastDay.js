@@ -39,9 +39,9 @@ export default function WeatherForecastDay(
 
   return (
     <div>
-      <div class="card">
-        <div class="card-body">
-          <h6 class="card-title">
+      <div className="card">
+        <div className="card-body">
+          <h6 className="card-title">
             {day()}
           </h6>
           <WeatherIcon
@@ -50,7 +50,7 @@ export default function WeatherForecastDay(
             }
             size={45}
           />
-          <p class="card-text">
+          <p className="card-text">
             <span className="weatherForecast-Max">
               {maxTemperature()}
             </span>

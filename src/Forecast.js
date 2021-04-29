@@ -29,7 +29,7 @@ export default function Forecast(
   if (loaded) {
     return (
       <div className="Forecast">
-        <div class="row">
+        <div className="row">
           {forecast.map(function (
             dailyForecast,
             index
