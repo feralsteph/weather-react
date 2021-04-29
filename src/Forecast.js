@@ -34,7 +34,7 @@ export default function Forecast(
             dailyForecast,
             index
           ) {
-            if (index < 5) {
+            if (index < 6) {
               return (
                 <div
                   className="col"
