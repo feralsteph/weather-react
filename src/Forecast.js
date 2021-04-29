@@ -45,6 +45,8 @@ export default function Forecast(
                   />
                 </div>
               );
+            } else {
+              return null;
             }
           })}
         </div>
