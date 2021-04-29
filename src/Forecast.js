@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+import React, {
+  useState,
+  useEffect,
+} from "react";
 import axios from "axios";
 import "./Forecast.css";
 import WeatherForecastDay from "./WeatherForecastDay";
@@ -14,51 +17,37 @@ export default function Forecast(
     setForecast,
   ] = useState(false);
 
+  useEffect(() => {
+    setLoaded(false);
+  }, [props.coordinates]);
+
   function handleResponse(response) {
     setForecast(response.data.daily);
     setLoaded(true);
   }
-  console.log(props);
 
   if (loaded) {
     return (
       <div className="Forecast">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <WeatherForecastDay
-                data={forecast[0]}
-              />
-            </div>
-            <div class="col">
-              <WeatherForecastDay
-                data={forecast[1]}
-              />
-            </div>
-            <div class="col">
-              <WeatherForecastDay
-                data={forecast[2]}
-              />
-            </div>
-            <div class="col">
-              <WeatherForecastDay
-                data={forecast[3]}
-              />
-            </div>
-            <div class="col">
-              <WeatherForecastDay
-                data={forecast[4]}
-              />
-            </div>
-            <div class="col">
-              <WeatherForecastDay
-                data={forecast[5]}
-              />
-            </div>
-          </div>
-        </div>{" "}
-        <br />
-        <br />
+        <div class="row">
+          {forecast.map(function (
+            dailyForecast,
+            index
+          ) {
+            if (index < 5) {
+              return (
+                <div
+                  className="col"
+                  key={index}
+                >
+                  <WeatherForecastDay
+                    data={dailyForecast}
+                  />
+                </div>
+              );
+            }
+          })}
+        </div>
       </div>
     );
   } else {
