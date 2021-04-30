@@ -23,7 +23,14 @@ function App() {
         >
           Open-source code
         </a>{" "}
-        by Stephanie LaRue
+        by{" "}
+        <a
+          href="https://github.com/feralsteph"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Stephanie LaRue
+        </a>
       </footer>
     </div>
   );
